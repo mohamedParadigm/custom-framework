@@ -1,0 +1,56 @@
+:root {
+  /* Light Mode Variables */
+  --main-light: #f0505c;
+  --alt-light: #26398e4d;
+  --grey-light: #eee;
+  --white-light: #fff;
+  --black-light: #000;
+  --shadow-light: rgb(0 0 0 / 14%) 0 0 4px 0, rgb(0 0 0 / 28%) 0 4px 8px 0;
+  /* Dark Mode Variables */
+  --main-dark: #f0505c;
+  --alt-dark: #26398e;
+  --grey-dark: #eee;
+  --white-dark: #000;
+  --black-dark: #fff;
+  --shadow-dark: rgba(150, 148, 148, 0.14) 0 0 4px 0,
+    rgba(122, 122, 122, 0.28) 0 4px 8px 0;
+}
+
+/* System Scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main: var(--main-dark);
+    --alt: var(--alt-dark);
+    --grey: var(--grey-dark);
+    --white: var(--white-dark);
+    --black: var(--black-dark);
+    --shadow: var(--shadow-dark);
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --main: var(--main-light);
+    --alt: var(--alt-light);
+    --grey: var(--grey-light);
+    --white: var(--white-light);
+    --black: var(--black-light);
+    --shadow: var(--shadow-light);
+  }
+}
+/* User Selected Scheme */
+[color-scheme="light"] {
+  --main: var(--main-light);
+  --alt: var(--alt-light);
+  --grey: var(--grey-light);
+  --white: var(--white-light);
+  --black: var(--black-light);
+  --shadow: var(--shadow-light);
+}
+[color-scheme="dark"] {
+  --main: var(--main-dark);
+  --alt: var(--alt-dark);
+  --grey: var(--grey-dark);
+  --white: var(--white-dark);
+  --black: var(--black-dark);
+  --shadow: var(--shadow-dark);
+}
