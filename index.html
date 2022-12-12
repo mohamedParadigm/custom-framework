@@ -1069,10 +1069,10 @@
 
     <script>
       function run(force) {
-        // var n = document.querySelector(".smartbanner");
-        // if (n) {
-        //   n.parentNode.removeChild(n);
-        // }
+        var n = document.querySelector(".smartbanner");
+        if (n) {
+          n.parentNode.removeChild(n);
+        }
         new SmartBanner({
           daysHidden: 0, // days to hide banner after close button is clicked (defaults to 15)
           daysReminder: 0, // days to hide banner after "VIEW" button is clicked (defaults to 90)
@@ -1094,14 +1094,14 @@
         });
       }
 
-      if (navigator.userAgent.indexOf("iPhone") !== -1) {
-        console.log("Iphone");
-        run("ios");
-      }
-      if (navigator.userAgent.indexOf("Android") !== -1) {
-        console.log("Andriod");
-        run("android");
-      }
+      run("ios");
+      run("android");
+      // if (navigator.userAgent.indexOf("iPhone") !== -1) {
+      //   console.log("Iphone");
+      // }
+      // if (navigator.userAgent.indexOf("Android") !== -1) {
+      //   console.log("Andriod");
+      // }
     </script>
   </body>
 </html>
