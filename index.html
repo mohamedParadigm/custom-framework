@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="apple-itunes-app" content="app-id=1438764129" />
+    <!-- <meta name="apple-itunes-app" content="app-id=1438764129" />
     <meta name="google-play-app" content="app-id=com.paradigm.texaschicken" />
     <meta name="msApplication-ID" content="microsoft.build.App" />
     <meta
       name="msApplication-PackageFamilyName"
       content="microsoft.build_8wekyb3d8bbwe"
-    />
+    /> -->
 
     <title>Framework</title>
     <link rel="icon" href="#" />
@@ -27,14 +27,14 @@
       href="js/dark-mode-variables/dark-mode-variables.css"
     />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       href="plugins/smart-app-banner/smart-app-banner.css"
-    />
-    <link rel="apple-touch-icon" href="plugins/smart-app-banner/icon.svg" />
-    <link rel="android-touch-icon" href="plugins/smart-app-banner/icon.svg" />
-    <link rel="windows-touch-icon" href="plugins/smart-app-banner/icon.svg" />
-    <link rel="stylesheet" href="css/custom-smart-app.css" />
+    /> -->
+    <!-- <link rel="apple-touch-icon" href="plugins/smart-app-banner/icon.svg" /> -->
+    <!-- <link rel="android-touch-icon" href="plugins/smart-app-banner/icon.svg" /> -->
+    <!-- <link rel="windows-touch-icon" href="plugins/smart-app-banner/icon.svg" /> -->
+    <!-- <link rel="stylesheet" href="css/custom-smart-app.css" /> -->
   </head>
   <body>
     <main class="app">
@@ -1065,42 +1065,40 @@
     <script src="js/notifications-api.js"></script>
 
     <!-- Smart App Banner -->
-    <script src="plugins/smart-app-banner/smart-app-banner.js"></script>
+    <!-- <script src="plugins/smart-app-banner/smart-app-banner.js"></script> -->
 
     <script>
-      function run(force) {
-        var n = document.querySelector(".smartbanner");
-        if (n) {
-          n.parentNode.removeChild(n);
-        }
-        new SmartBanner({
-          daysHidden: 0, // days to hide banner after close button is clicked (defaults to 15)
-          daysReminder: 0, // days to hide banner after "VIEW" button is clicked (defaults to 90)
-          appStoreLanguage: "us", // language code for the App Store (defaults to us)
-          title: "Texas Chicken",
-          author: "ParadigmSolutions",
-          button: "View",
-          force: force,
-          // store: {
-          //   ios: "On the App Store",
-          //   android: "In Google Play",
-          //   windows: "In Windows store",
-          // },
-          // price: {
-          //   ios: "FREE",
-          //   android: "FREE",
-          //   windows: "FREE",
-          // },
-        });
-      }
+      // function run(force) {
+      //   var n = document.querySelector(".smartbanner");
+      //   if (n) {
+      //     n.parentNode.removeChild(n);
+      //   }
+      //   new SmartBanner({
+      //     daysHidden: 0, // days to hide banner after close button is clicked (defaults to 15)
+      //     daysReminder: 0, // days to hide banner after "VIEW" button is clicked (defaults to 90)
+      //     appStoreLanguage: "us", // language code for the App Store (defaults to us)
+      //     title: "Texas Chicken",
+      //     author: "ParadigmSolutions",
+      //     button: "View",
+      //     force: force,
+      //     // store: {
+      //     //   ios: "On the App Store",
+      //     //   android: "In Google Play",
+      //     //   windows: "In Windows store",
+      //     // },
+      //     // price: {
+      //     //   ios: "FREE",
+      //     //   android: "FREE",
+      //     //   windows: "FREE",
+      //     // },
+      //   });
+      // }
 
-      run("ios");
-      run("android");
       // if (navigator.userAgent.indexOf("iPhone") !== -1) {
-      //   console.log("Iphone");
+      //   run("ios");
       // }
       // if (navigator.userAgent.indexOf("Android") !== -1) {
-      //   console.log("Andriod");
+      //   run("android");
       // }
     </script>
   </body>
