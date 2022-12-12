@@ -1,0 +1,10 @@
+.smartbanner-ios .smartbanner-icon {
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  box-shadow: none;
+}
+/* .smartbanner-android {
+  background-color: transparent;
+} */

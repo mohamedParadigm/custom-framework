@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility</title>
+    <!-- Fav icon -->
+    <link rel="icon" href="#" />
+    <!-- Plugins Styles -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="plugins/floating-accessibility-tools/open-accessibility.min.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/theme-variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-dropdown.css" />
+    <link rel="stylesheet" href="css/megamenu.css" />
+    <link rel="stylesheet" href="css/accessibility.css" />
+  </head>
+  <body>
+    <main class="app">
+      <!-- Start of Navbar -->
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container d-block position-relative">
+          <div class="row g-3 justify-content-between align-items-center">
+            <div class="col-12 col-lg-auto">
+              <div
+                class="d-flex align-items-center justify-content-between gap-3"
+              >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Navbar</a>
+              </div>
+            </div>
+
+            <div class="col col-lg-auto px-0 px-lg-3 mt-0 mt-lg-3">
+              <div class="offcanvas offcanvas-start" id="offcanvasExample">
+                <div class="offcanvas-header d-lg-none bg-light">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    Offcanvas
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav" id="navbarLinksParent">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item dropdown-wrapper">
+                      <a
+                        class="nav-link d-none d-lg-flex active"
+                        aria-current="page"
+                        href="accessibilty.html"
+                      >
+                        Accessibility
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.com/svgjs"
+                            version="1.1"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 128 128"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              width: 12px;
+                              height: 12px;
+                            "
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                id="Down_Arrow_3_"
+                                d="m64 88c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656s4.094-1.563 5.656 0l37.172 37.172 37.172-37.172c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-40 40c-.781.781-1.805 1.172-2.828 1.172z"
+                                fill="currentColor"
+                                data-original="#000000"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                      </a>
+                      <a
+                        href="#collapseOne"
+                        class="nav-link collapsed d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        Accessibility
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.com/svgjs"
+                            version="1.1"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 128 128"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              width: 12px;
+                              height: 12px;
+                            "
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                id="Down_Arrow_3_"
+                                d="m64 88c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656s4.094-1.563 5.656 0l37.172 37.172 37.172-37.172c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-40 40c-.781.781-1.805 1.172-2.828 1.172z"
+                                fill="currentColor"
+                                data-original="#000000"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                      </a>
+                      <ul
+                        class="dropdown-content collapse"
+                        id="collapseOne"
+                        data-bs-parent="#navbarLinksParent"
+                      >
+                        <li>
+                          <a href="accessibilty1.html" class="dropdown-item active"
+                            >Accessibility 1</a
+                          >
+                        </li>
+                        <li>
+                          <a href="accessibilty2.html" class="dropdown-item"
+                            >Accessibility 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="live-chat.html">Live chat</a>
+                    </li>
+                    <li class="nav-item mega-menu-wrapper">
+                      <a
+                        href="pages/shop.html"
+                        class="nav-link d-none d-lg-flex"
+                      >
+                        Mega Menu
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.com/svgjs"
+                            version="1.1"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 128 128"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              width: 12px;
+                              height: 12px;
+                            "
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                id="Down_Arrow_3_"
+                                d="m64 88c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656s4.094-1.563 5.656 0l37.172 37.172 37.172-37.172c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-40 40c-.781.781-1.805 1.172-2.828 1.172z"
+                                fill="currentColor"
+                                data-original="#000000"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                      </a>
+                      <a
+                        href="#collapseTwo"
+                        class="nav-link collapsed d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Mega Menu
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.com/svgjs"
+                            version="1.1"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 128 128"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              width: 12px;
+                              height: 12px;
+                            "
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                id="Down_Arrow_3_"
+                                d="m64 88c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656s4.094-1.563 5.656 0l37.172 37.172 37.172-37.172c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-40 40c-.781.781-1.805 1.172-2.828 1.172z"
+                                fill="currentColor"
+                                data-original="#000000"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                      </a>
+                      <div
+                        class="mega-menu collapse"
+                        id="collapseTwo"
+                        data-bs-parent="#navbarLinksParent"
+                      >
+                        <div class="images-wrapper">
+                          <a href="#" class="product-image">
+                            <img
+                              src="img/300x200.png"
+                              alt="product 1"
+                              width="325"
+                              height="235"
+                            />
+                          </a>
+                          <a href="#" class="product-image">
+                            <img
+                              src="img/300x200.png"
+                              alt="product 1"
+                              width="325"
+                              height="235"
+                            />
+                          </a>
+                          <a href="#" class="product-image">
+                            <img
+                              src="img/300x200.png"
+                              alt="product 1"
+                              width="325"
+                              height="235"
+                            />
+                          </a>
+                          <a href="#" class="product-image">
+                            <img
+                              src="img/300x200.png"
+                              alt="product 1"
+                              width="325"
+                              height="235"
+                            />
+                          </a>
+                        </div>
+                        <div class="links-wrapper">
+                          <ul class="links">
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link One</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link Two</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link Three</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link Four</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link Five</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link Six</span>
+                              </a>
+                            </li>
+                          </ul>
+                          <ul class="links">
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link One</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link Two</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link Three</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link Four</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link Five</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="23"
+                                  height="23"
+                                  fill="#fff"
+                                  version="1.1"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:svgjs="http://svgjs.com/svgjs"
+                                  x="0"
+                                  y="0"
+                                  viewBox="0 0 512 512"
+                                  style="enable-background: new 0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                      <g>
+                                        <path
+                                          d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                    <g xmlns="http://www.w3.org/2000/svg"></g>
+                                  </g>
+                                </svg>
+                                <span>Link Six</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Link 4</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto d-none d-lg-block">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End of Navbar -->
+    </main>
+
+    <!-- Plugins Scripts -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/jquery-3.6.1.min.js"></script>
+    <script src="plugins/floating-accessibility-tools/open-accessibility.min.js"></script>
+    <script src="plugins/floating-accessibility-tools/locale.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/accessibility1.js"></script>
+  </body>
+</html>
