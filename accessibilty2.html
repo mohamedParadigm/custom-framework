@@ -4,6 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Start SmartBanner configuration -->
+    <meta name="smartbanner:title" content="Texas Chicken" />
+    <meta name="smartbanner:author" content="ParadigmSolutions" />
+    <meta name="smartbanner:price" content="FREE" />
+    <meta name="smartbanner:price-suffix-apple" content=" - On the App Store" />
+    <meta name="smartbanner:price-suffix-google" content=" - In Google Play" />
+    <meta
+      name="smartbanner:icon-apple"
+      content="plugins/recent-smart-banner/icon.svg"
+    />
+    <meta
+      name="smartbanner:icon-google"
+      content="plugins/recent-smart-banner/icon.svg"
+    />
+    <meta name="smartbanner:button" content="VIEW" />
+    <meta
+      name="smartbanner:button-url-apple"
+      content="https://apps.apple.com/eg/app/texas-chicken/id1438764129"
+    />
+    <meta
+      name="smartbanner:button-url-google"
+      content="https://play.google.com/store/apps/details?id=com.paradigm.texaschicken"
+    />
+    <meta name="smartbanner:enabled-platforms" content="android,ios" />
+    <meta name="smartbanner:close-label" content="Close" />
+    <!-- End SmartBanner configuration -->
+
     <title>Accessibility</title>
     <!-- Fav icon -->
     <link rel="icon" href="#" />
@@ -14,6 +42,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/custom-dropdown.css" />
     <link rel="stylesheet" href="css/megamenu.css" />
+
+    <!-- Smart Banner -->
+    <link
+      rel="stylesheet"
+      href="plugins/recent-smart-banner/smartbanner.min.css"
+    />
   </head>
   <body>
     <main class="app">
@@ -56,9 +90,7 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav" id="navbarLinksParent">
                     <li class="nav-item">
-                      <a class="nav-link" href="index.html"
-                        >Home</a
-                      >
+                      <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown-wrapper">
                       <a
@@ -141,7 +173,9 @@
                           >
                         </li>
                         <li>
-                          <a href="accessibilty2.html" class="dropdown-item active"
+                          <a
+                            href="accessibilty2.html"
+                            class="dropdown-item active"
                             >Accessibility 2</a
                           >
                         </li>
@@ -957,5 +991,8 @@
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="plugins/jquery-3.6.1.min.js"></script>
     <script src="plugins/acctoolbar/acctoolbar.min.js"></script>
+
+    <!-- Smart Banner -->
+    <script src="plugins/recent-smart-banner/smartbanner.min.js"></script>
   </body>
 </html>
